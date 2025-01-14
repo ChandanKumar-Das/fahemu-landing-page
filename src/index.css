@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Calendar Styling */
+.react-calendar {
+  border: none !important;
+  /* border-radius: 8px; */
+  /* font-family: 'Outfit', sans-serif; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.react-calendar__navigation button {
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.react-calendar__tile {
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile--active {
+  background: #8b572a;
+  color: #fff;
+  border-radius: 8px;
+}
+
+
+/* Form Styling */
+input,
+textarea {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8b572a;
+}
+
+.react-select__control {
+  border: 1px solid #d1d5db;
+  padding: 2px;
+  border-radius: 0.375rem;
+}
+
+.react-select__control--is-focused {
+  border-color: #8b572a;
+  box-shadow: none;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+@layer utilities {
+  .duration-high {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
