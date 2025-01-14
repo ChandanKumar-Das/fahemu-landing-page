@@ -61,12 +61,13 @@ const TestimonialData = [
 const Testimonial = () => {
   return (
     <>
-      <div className=" bg-[#f1efee] py-[100px]">
+      <div className=" bg-[#f1efee] py-6 md:py-[100px] px-4 md:px-0">
         <div className="max-w-[1100px] mx-auto ">
             <Slider {...settings}>
               {TestimonialData.map((data) => (
                 <div data-aos="fade-up" className="" key={data.id}>
                   <div className="text-center  p-4  space-y-3 my-8 mx-5">
+                    <div className="font-bold text-4xl text-green-400">*****</div>
                     <img
                       className="rounded-full block mx-auto"
                       src={data.img}

@@ -9,12 +9,13 @@ import Niegivure from "./components/Niegivure"
 import { Safari } from "./components/safari"
 import Testimonial from "./components/testimonial"
 import { Urlabs } from "./components/Urlabs"
-
+import { ScrollContextProvider } from "./context/scrollcontext"
 function App() {
   
 
   return (
     <>
+     <ScrollContextProvider>
       <FirstSection/>
       <Besuchen/>
       <Gruppe/>
@@ -26,6 +27,7 @@ function App() {
       <Testimonial/>
       <Niegivure/>
       <Footer/>
+     </ScrollContextProvider>
     </>
   )
 }

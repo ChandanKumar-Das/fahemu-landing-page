@@ -1,22 +1,25 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { GruppeData } from "../data/gruppedata";
 import { FaCheck } from "react-icons/fa";
+import { ScrollContext } from "../context/scrollcontext";
 export function Gruppe (){
 
     const [clickedCards, setClickedCards] = useState([]);
 
+      const {handleScroll} = useContext(ScrollContext)
   // Handle card click
   const handleCardClick = (index) => {
+    handleScroll('section2')
     setClickedCards((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+      prev.includes(index) ? prev.filter((i) => i !== index) : [index]
     );
   };
     return(
         <>
-        <div className="w-full pb-20">
+        <div  className="w-full md:pb-20 pb-10 px-4 md:px-0">
           <div className="pt-10 max-w-[1100px] mx-auto">
-            <h1 className="font-bold text-4xl pb-4 ">{GruppeData.title}</h1>
+            <h1 className="font-bold text-2xl md:text-4xl pb-4 ">{GruppeData.title}</h1>
             <p className="text-[20px] leading-inherit text-[#737679] font-normal font-outfit m-0 p-0 ">
             Bitte gib die Größe deiner Gruppe für die <span className="font-bold">Tansania Safari</span> an. <span className="font-bold">Wir organisieren private Safaris und Gruppentouren.</span>
             </p>
@@ -26,6 +29,7 @@ export function Gruppe (){
                   key={index}
                   className="relative overflow-hidden shadow-xl cursor-pointer group"
                   onClick={() => handleCardClick(index)}
+                 
                 >
               
                   <img

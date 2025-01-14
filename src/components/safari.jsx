@@ -1,23 +1,26 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { SafariData } from "../data/safari";
 import { FaCheck } from "react-icons/fa";
+import { ScrollContext } from "../context/scrollcontext";
 export function Safari(){
 
     const [clickedCards, setClickedCards] = useState([]);
-
-  // Handle card click
-  const handleCardClick = (index) => {
-    setClickedCards((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
+     
+    const {sectionRefs,handleScroll}= useContext(ScrollContext)
+       // Handle card click
+    const handleCardClick = (index) => {
+        handleScroll('section3')
+        setClickedCards((prev) =>
+        prev.includes(index) ? prev.filter((i) => i !== index) : [index]
+      );
   };
     return(
         <>
-        <div className="w-full bg-gray-100 pb-20">
+        <div ref={sectionRefs.section2} className="w-full  bg-gray-100 px-4 md:px-0 pb-10 md:pb-20">
           <div className="pt-10 max-w-[1100px] mx-auto">
-  
-            <h1 className="font-bold text-4xl pb-4 ">{SafariData.title}</h1>
+
+            <h1 className="font-bold text-2xl md:text-4xl pb-4 ">{SafariData.title}</h1>
             <p className="text-[20px] leading-inherit text-[#737679] font-normal font-outfit m-0 p-0 ">
               {SafariData.description}
             </p>
