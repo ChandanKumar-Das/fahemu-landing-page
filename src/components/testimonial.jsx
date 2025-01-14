@@ -61,7 +61,7 @@ const TestimonialData = [
 const Testimonial = () => {
   return (
     <>
-      <div className=" bg-[#f1efee] py-6 md:py-[100px] px-4 md:px-0">
+      <div className=" bg-[#f1efee] py-6 md:py-[50px] md:mt-9 px-4 md:px-0">
         <div className="max-w-[1100px] mx-auto ">
             <Slider {...settings}>
               {TestimonialData.map((data) => (
@@ -73,8 +73,8 @@ const Testimonial = () => {
                       src={data.img}
                       alt=""
                     />
-                    <p className="text-gray-500 text-lg">{data.testimonial}</p>
-                    <h1 className="text-xl font-bold">{data.name}</h1>
+                    <p className="text-gray-500 italic  text-lg">{data.testimonial}</p>
+                    <h1 className="text-2xl font-bold">{data.name}</h1>
                   </div>
                 </div>
               ))}

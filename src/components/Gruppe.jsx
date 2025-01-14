@@ -31,14 +31,11 @@ export function Gruppe (){
                   onClick={() => handleCardClick(index)}
                  
                 >
-              
                   <img
                     src={card.image}
                     alt="image"
-                    className="h-38 w-full object-cover "
+                    className="h-48 w-full object-cover "
                   />
-      
-             
                   <div className="p-4 bg-white">
                     <h2 className="text-sm md:text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
                       {card.title}

@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        outfit: ['Outfit', 'sans-serif'],
-      },
       keyframes: {
         blink: {
           '0%, 100%': { opacity: 1 },
@@ -17,6 +14,9 @@ export default {
       },
       animation: {
         blink: 'blink 1s infinite',
+      },
+      fontFamily: {
+          sans: ['Sen', 'ui-sans-serif', 'system-ui']
       },
     },
   },
