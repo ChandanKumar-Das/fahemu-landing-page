@@ -67,7 +67,7 @@ const Testimonial = () => {
               {TestimonialData.map((data) => (
                 <div data-aos="fade-up" className="" key={data.id}>
                   <div className="text-center  p-4  space-y-3 my-8 mx-5">
-                    <div className="font-bold text-4xl text-green-400">*****</div>
+                    <div className="font-bold text-4xl text-[#c46637]">*****</div>
                     <img
                       className="rounded-full block mx-auto"
                       src={data.img}
