@@ -23,7 +23,7 @@ export function Besuchen (){
               {Data.description}
             </p>
       
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
               {Data.cardDatas.map((card, index) => (
                 <div
                   key={index}
@@ -37,10 +37,10 @@ export function Besuchen (){
                   />
 
                   <div className="p-4 ">
-                    <h2 className="text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
+                    <h2 className="text-sm md:text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
                       {card.title}
                     </h2>
-                    <p className="text-md flex justify-center text-center text-gray-500 transition-colors duration-300">
+                    <p className="hidden md:block text-md flex justify-center text-center text-gray-500 transition-colors duration-300">
                       {card.paragraph}
                     </p>
                   </div>

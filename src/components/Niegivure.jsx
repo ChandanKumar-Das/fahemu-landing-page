@@ -27,8 +27,8 @@ const Niegivure = () => {
   };
 
   return (
-    <div className="max-w-[1100px] mx-auto p-16">
-      <h1 className="text-4xl font-bold text-center mb-4">
+    <div className="max-w-[1100px] mx-auto p-4 md:p-16">
+      <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">
         ERLEBE TANSANIA WIE NIE ZUVOR
       </h1>
       <p className="text-center text-gray-500 mb-8">
@@ -38,7 +38,7 @@ const Niegivure = () => {
       </p>
 
     
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
         {imageData.map((item) => (
           <img
             key={item.id}

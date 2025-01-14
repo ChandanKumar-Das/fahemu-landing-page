@@ -25,7 +25,7 @@ export function Du(){
               {DU.description}
             </p>
       
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
               {DU.cardDatas.map((card, index) => (
                 <div
                   key={index}
@@ -41,7 +41,7 @@ export function Du(){
       
              
                   <div className="p-4 bg-white">
-                    <h2 className="text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
+                    <h2 className=" text-sm md:text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
                       {card.title}
                     </h2>
                   </div>

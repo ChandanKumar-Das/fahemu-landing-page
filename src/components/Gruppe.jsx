@@ -23,7 +23,7 @@ export function Gruppe (){
             <p className="text-[20px] leading-inherit text-[#737679] font-normal font-outfit m-0 p-0 ">
             Bitte gib die Größe deiner Gruppe für die <span className="font-bold">Tansania Safari</span> an. <span className="font-bold">Wir organisieren private Safaris und Gruppentouren.</span>
             </p>
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
               {GruppeData.cardDatas.map((card, index) => (
                 <div
                   key={index}
@@ -40,10 +40,10 @@ export function Gruppe (){
       
              
                   <div className="p-4 bg-white">
-                    <h2 className="text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
+                    <h2 className="text-sm md:text-lg uppercase font-bold flex justify-center text-[#8B572A] group-hover:text-black transition-colors duration-300">
                       {card.title}
                     </h2>
-                    <p className="text-md flex justify-center text-center text-gray-500 transition-colors duration-300">
+                    <p className="hidden md:block text-md flex justify-center text-center text-gray-500 transition-colors duration-300">
                       {card.paragraph}
                     </p>
                   </div>

@@ -13,9 +13,9 @@ export function Urlabs(){
   </h2>
 
   {/* Cards Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-12">
     {/* Card 1 */}
-    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg">
+    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg hover:animate-blink">
       <div className="absolute right-4 md:right-16 md:top-5 md:w-20 md:h-20 w-12 h-12 bg-white rounded-full flex items-center justify-center">
         <img
           src="https://fahamusafaris.de/tanzania-special-offers/images/discount.png"
@@ -34,7 +34,7 @@ export function Urlabs(){
     </div>
 
     {/* Card 2 */}
-    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg">
+    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg hover:animate-blink">
       <div className="absolute right-4 md:right-16 top-5 md:w-20 md:h-20 w-12 h-12 bg-white rounded-full flex items-center justify-center">
         <img
           src="https://fahamusafaris.de/tanzania-special-offers/images/save-time.png"
@@ -52,7 +52,7 @@ export function Urlabs(){
     </div>
 
     {/* Card 3 */}
-    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg">
+    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg hover:animate-blink">
       <div className="absolute  right-4 md:right-16 md:w-20 md:h-20 w-12 h-12 bg-white rounded-full flex items-center justify-center">
         <img
           src="https://fahamusafaris.de/tanzania-special-offers/images/problem.png"
@@ -72,7 +72,7 @@ export function Urlabs(){
     </div>
 
     {/* Card 4 */}
-    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg">
+    <div className="relative block p-6 bg-[#f1efee] rounded-lg shadow-lg hover:animate-blink">
       <div className="absolute  right-4 md:right-16 md:w-20 md:h-20 w-12 h-12 bg-white rounded-full flex items-center justify-center">
         <img
           src="https://fahamusafaris.de/tanzania-special-offers/images/rating.png"
